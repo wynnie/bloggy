@@ -3,8 +3,11 @@ import { Component } from 'react';
 
 export default class App extends Component {
   render() {
+      //this.props.children for all child routes
     return (
-      <div>React simple starter</div>
+        <div>
+            {this.props.children}
+        </div>
     );
   }
 }
